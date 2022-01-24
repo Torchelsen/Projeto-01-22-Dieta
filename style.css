@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: : 100%;
+    height: 100px;
+    background-color: #8ae188;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 40px;
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 23px;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.calculadoras{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.calculadora-taxa-metabolismo-basal{
+    width: 400px;
+    height: 500px;
+    background-color: #8ae188;
+}
+
+.calculadora-gasto-calorico-diario{
+    width: 400px;
+    height: 500px;
+    background-color: #8ae188;
+}
+
+.calculadora-macros{
+    width: 400px;
+    height: 500px;
+    background-color: #8ae188;
+}
+
+.planejamento-dieta{
+    width: 1300px;
+    height: 500px;
+    background-color: #8ae188;
+}
+
+.gastos-dieta{
+    width: 1300px;
+    height: 500px;
+    background-color: #8ae188;
+}

@@ -1,68 +1,76 @@
-*{
-    margin: 0;
-    padding: 0;
+#header {
     box-sizing: border-box;
-}
-
-header{
-    width: : 100%;
     height: 100px;
-    background-color: #8ae188;
+    padding: 2rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    background-color: #8ae188;
+    width: 100%;
 }
 
-h1{
-    font-family: 'Poppins', sans-serif;
-    color: #fff;
+#logo a {
     font-size: 40px;
-}
-
-h2{
     font-family: 'Poppins', sans-serif;
-    color: #fff;
-    font-size: 23px;
-    text-align: center;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
 }
 
-main{
+#menu {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: nowrap;
 }
 
-.calculadoras{
+#menu li a {
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    margin: 0 20px;
+}
+
+#corpo {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: 62px;
 }
 
-.calculadora-taxa-metabolismo-basal{
+.calculadoras {
     width: 400px;
     height: 500px;
+    border-radius: 20px;
     background-color: #8ae188;
+    font-family: 'Poppins', sans-serif;
+    color: white;
 }
 
-.calculadora-gasto-calorico-diario{
-    width: 400px;
-    height: 500px;
-    background-color: #8ae188;
+.calc-titulo {
+    font-size: 23px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
-.calculadora-macros{
-    width: 400px;
-    height: 500px;
-    background-color: #8ae188;
+.calc-texto {
+    font-size: 14px;
+    text-align: center;
 }
 
-.planejamento-dieta{
+/*.planejamento-dieta{
     width: 1300px;
     height: 500px;
+    margin-top: 62px;
+    border-radius: 20px;
     background-color: #8ae188;
 }
 
 .gastos-dieta{
     width: 1300px;
     height: 500px;
+    margin-top: 62px;
+    border-radius: 20px;
     background-color: #8ae188;
-}
+}*/

@@ -4,38 +4,94 @@
         <meta charset="UTF-8">
         <title>Dieta Já</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="reset.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header> 
-            <h2></h2>
-            <h1>DIETA JÁ</h1>
-            <nav class="menu">
-                <ul>
-                    <li><a href="#"><img src="navhamburger.svg" alt="menu icon"></a>
-                        <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Como funciona o Dieta Já</a></li>
-                            <li><a href="">Fórmulas que usamos</a></li>
-                            <li><a href="">Quem somos</a></li>
-                        </ul>
-                    </li> 
+        <header id="header">
+            <h1 id="logo">
+                <a href="/index.html"><img src="/logo.svg" alt="Logo dieta já"></a>
+            </h1>
+            <nav id="nav">
+                <ul id="menu">
+                    <li><a href="/comousar.html">Como usar o Dieta Já</a></li>
+                    <li><a href="/formulas.html">Fórmulas que usamos</a></li>
+                    <li><a href="/contato.html">Contato</a></li>
                 </ul>
             </nav>
         </header>
-        <main>
-            <div class="calculadoras">
-                <div class="calculadora-taxa-metabolismo-basal">
-                    <h2>CALCULADORA DE<br>TAXA DE METABOLISMO BASAL</h2>
-                </div>
-                <div class="calculadora-gasto-calorico-diario">
-                    <h2>CALCULADORA DE<br>GASTO CALÓRICO DIÁRIO</h2>
-                </div>
-                <div class="calculadora-macros">
-                    <h2>CALCULADORA DE<br>MACROS</h2>
-                </div>
+        <main id="corpo">
+            <div class="calculadoras" id="calc1">
+                <h2 class="calc-titulo">Calculadora de<br>taxa de metabolismo basal</h2>
+                <h3 class="calc-texto">
+                    A Taxa Metabólica Basal (TMB) é o mínimo de energia necessária para manter as funções do organismo em repouso, como os batimentos cardíacos, a pressão arterial, a respiração e a manutenção da temperatura corporal.
+                </h3>
+                <form class="formulario-calculadora" id="form1">
+                        <p>Sexo:</p>
+                        <input type="radio" name="sexo" id="homem" value="1">
+                        <label for="homem">HOMEM</label>
+                        <input type="radio" name="sexo" id="mulher" value="2">
+                        <label for="mulher">MULHER</label>
+                        <label for="peso">PESO:</label>
+                        <input type="number" id="peso" value="">
+                        <label for="altura">ALTURA:</label>
+                        <input type="number" id="altura" value="">
+                        <label for="idade">IDADE:</label>
+                        <input type="number" id="idade" name="idade">
+                        <input type="submit" value="calcular">
+                        <label for="tmb">SUA TAXA METABÓLICA BASAL É:</label><br>
+                        <input type="number" id="tmb" value="" readonly>
+                </form>
+            </div>
+            <div class="calculadoras" id="calc2">
+                <h2 class="calc-titulo">Calculadora de<br>gasto calórico diário</h2>
+                <h3 class="calc-texto">
+                    O gasto calórico é a quantidade total de energia que o corpo gasta por dia, incluindo a energia que o corpo precisa para manter as funções básicas (TMB) e a energia que se gasta em atividades feitas ao longo do dia, como limpar a casa, trabalhar ou praticar atividades físicas, por exemplo.
+                </h3>
+                <form class="formulario-calculadora" id="form2">
+                    <p>
+                        <label for="tmb">SUA TAXA DE METABOLISMO<br>BASAL:</label>
+                        <input type="number" id="tmb" value="" readonly>
+                    </p>
+                    <p>
+                        <label for="nivel-atividade">QUAL SEU NÍVEL DE<br>ATIVIDADE FÍSICA SEMANAL?</label>
+                        <select name="nivel-atividade" id="nivel-atividade">
+                            <option value="pouco">POUCO OU NENHUM EXERCÍCIO</option>
+                            <option value="leve">EXERCÍCIO LEVE ALGUMAS VEZES POR SEMANA</option>
+                            <option value="moderado">EXERCÍCIO MODERADO 3 A 5 VEZES POR SEMANA</option>
+                            <option value="intenso">EXERCÍCIO INTENSO 6 A 7 VEZES POR SEMANA</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="gasto-calorico">SEU GASTO CALÓRICO DIÁRIO É:</label><br>
+                        <input type="number" id="gasto-calorico" value="" readonly>
+                    </p>
+                </form>
+            </div>
+            <div class="calculadoras" id="calc3">
+                <h2 class="calc-titulo">Calculadora de<br>macros</h2>
+                <h3 class="calc-texto">A calculadora de macronutrientes tem por objetivo mostrar a quantidade de calorias, carboidratos, proteínas e gorduras que você precisa ingerir por dia, de acordo com o seu objetivo.</h3>
+                <form class="formulario-calculadora" id="form3">
+                    <p><label for="gasto-calorico">SEU GASTO CALÓRICO DIÁRIO:</label>
+                        <input type="number" id="gasto-calorico" value="" readonly></p>
+                    <p><label for="objetivo">QUAL O SEU OBJETIVO?</label>
+                        <select name="objetivo" id="objetivo">
+                            <option value="perder-peso">PERDER PESO</option>
+                            <option value="manter-peso">MANTER PESO</option>
+                            <option value="ganhar-peso">GANHAR PESO</option>
+                        </select></p>
+                    <p><h2 id="resultado-macros">SEUS RESULTADOS</h2>
+                        <label for="calorias">CALORIAS:</label><br>
+                        <input type="number" id="calorias" value="" readonly></p>
+                    <p><label for="carboidratos">CARBOIDRATOS:</label><br>
+                        <input type="number" id="carboidratos" value="" readonly></p>
+                    <p><label for="proteinas">PROTEÍNAS:</label><br>
+                        <input type="number" id="proteinas" value="" readonly></p>
+                    <p><label for="gorduras">GORDURAS:</label><br>
+                        <input type="number" id="gorduras" value="" readonly></p>
+                </form>
             </div>
             <div class="planejamento-dieta">
                 <h2>PLANEJAMENTO DA DIETA</h2>
@@ -45,7 +101,7 @@
             </div>
         </main>
         <footer>
-            
+
         </footer>
         <script src="script.js"></script>
     </body>

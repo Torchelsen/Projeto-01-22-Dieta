@@ -1,0 +1,25 @@
+:root {
+    --cor-principal: #8ae188;
+    --cor-secundaria: #ffffff;
+    --fonte-principal: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--fonte-principal);
+}
+
+/*.planejamento-dieta{
+    width: 1300px;
+    height: 500px;
+    margin-top: 62px;
+    border-radius: 20px;
+    background-color: #8ae188;
+}
+
+.gastos-dieta{
+    width: 1300px;
+    height: 500px;
+    margin-top: 62px;
+    border-radius: 20px;
+    background-color: #8ae188;
+}*/

@@ -1,0 +1,20 @@
+.cabecalho {
+    background-color: var(--cor-principal);
+    width: 100vw;
+    height: 100px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: ". logo nav";
+    justify-items: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.20);
+}
+
+.cabecalho__logo {
+    grid-area: logo;
+}
+
+.cabecalho__menu {
+    grid-area: nav;
+}
